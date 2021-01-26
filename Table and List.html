@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,  
+        initial-scale=1, shrink-to-fit=no"> 
+  <title>Table and List Generator</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="Table and List.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/f27656ddfc.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+	<!-- Nav Bar -->
+	<div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark shadow-sm p-3 mb-5 bg-white">
+
+        <a class="navbar-brand" href="">Compressèto</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+                         <li class="nav-item">
+            <div class="dropdown">
+
+              <a class="nav-link" href="#tools">Tools</a>
+            
+             <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            </div>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#compress">Compress</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+  </div>
+  <div  class=" container-fluid intro">
+	  <div class="row">
+	        <div class="col-lg-6">
+	          <h1 class="big-heading">Generate Tedious Code in Seconds!</h1>
+	          <h3 class="small-heading">Ready Steady Go!</h3>
+	        </div>
+
+	        <div class="col-lg-6">
+	        	<img class="title-image img-fluid" src="stuff.png">
+	        </div>
+	  </div>
+  </div>
+
+  <div class=" container-fluid title bg-dark" >
+    <h1 class="ml9">
+  <span class="text-wrapper">
+    <span class="letters">Table Generator</span>
+  </span>
+</h1>
+  </div>
+  <div class="container-fluid generate" style="background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);">
+  	<div>
+  		<form>
+  			<div class="form-group row">
+		      <div class="col">
+		        <label for="ex1">Enter Number of Rows</label>
+		        <input class="form-control" id="rows" type="text" required>
+		      </div>
+		      <div class="col">
+		        <label for="ex2">Enter Number of Columns</label>
+		        <input class="form-control" id="cols" type="text" required>
+		      </div>
+		      
+		    </div><br>
+  			<div class="form-group">
+		      <input name="generate" type="button" value="SUBMIT" class="button" onclick='createTable();'/>
+    		</div>
+  		</form>
+  	</div>
+  </div>
+  <div class="container-fluid textarea" >
+    <form>
+      <p style="font-family: 'Redressed', cursive;font-size: 21px;">Here is The Code for your Table!</p>
+      <div class="form-group" style="background-color:lavender;padding-top: 40px;position: relative;">
+        <div class="form-group">
+          <button type="button" class="copy" id="copy1">COPY</button>
+        </div>
+        <div class="form-group">
+          <button type="button" class="reset" id="reset1">RESET</button>
+        </div>
+        <!--<button type="button" class="copy" id="copy">COPY</button>-->
+        <textarea class="form-control" rows="10" id="comment" name="text" placeholder="Your Table Code will Appear here!" style="z-index: +10;"></textarea>
+      </div>
+    </form>
+  </div>
+
+  <div class=" container-fluid title" style="background-color: #301934; box-shadow: 5px 5px 15px -5px rgba(0, 0, 0,0.3)";>
+    <h1 class="ml10">
+  <span class="text-wrapper">
+    <span class="let">List Generator</span>
+  </span>
+</h1>
+  </div>
+  <div class="container-fluid generate" style="background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);">
+    <div>
+      <form>
+        <div class="form-group row">
+          <div class="col">
+            <label for="ex1">Enter The Number of Items in the List</label><br><br>
+            <input class="form-control" id="items" type="text" required>
+          </div>
+        </div><br>
+        <div class="form-group">
+          <input name="generate" type="button" value="SUBMIT" class="button" onclick='createList();'/>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid textarea">
+    <form>
+      <p style="font-family: 'Redressed', cursive;font-size: 21px;">Here is The Code for your List!</p>
+      <div class="form-group" style="background-color:lavender;padding-top: 40px;position: relative;">
+        <div class="form-group">
+          <button type="button" class="copy" id="copy2">COPY</button>
+        </div>
+        <div class="form-group">
+          <button type="button" class="reset" id="reset2">RESET</button>
+        </div>
+        <!--<button type="button" class="copy" id="copy">COPY</button>-->
+        <textarea class="form-control" rows="10" id="display" name="text" placeholder="Your List Code will Appear here!" style="z-index: +10;"></textarea>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section bg-dark" id="footer" >
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f" style="color: white;"></i>
+      <i class="social-icon fab fa-twitter" style="color: white;"></i>
+      <i class="social-icon fab fa-instagram" style="color: white;"></i>
+      <i class="social-icon fas fa-envelope" style="color: white;"></i>
+      <p>© Copyright 2021 Compressor</p>
+    </div>
+  </footer>
+<script type="text/javascript" src="Table and List.js"></script>
+
+</body>
+</html>

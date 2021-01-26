@@ -1,0 +1,261 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+.container{
+  padding: 4% 3%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 1 1 2rem;
+  background-image: linear-gradient(to right, #BA55D3 , #660198);
+  box-shadow: 3px 3px 7px #888888;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.reset{
+      float: right;
+      margin-bottom: 10px;
+      margin-top: -2.5em;
+      border:1px solid #55AE3A;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 7em;
+      border-radius: 4px;
+      color: white;
+      background-color:  #551A8B;
+}
+
+.button{
+      border: none;
+      background-color:  #551A8B;
+      color: white;
+      border-radius: 4px;
+      margin-top: 10px;
+      padding: 5px 30px 5px 30px;
+      width:250px;
+    }
+
+    .copy{
+      float: right;
+      margin-bottom: 10px;
+      margin-top: -1.5em;
+      border:1px solid #55AE3A;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      color: white;
+      background-color:  #551A8B;
+    }
+
+    .button:hover{
+      background-color: #CC99CC;
+          color: black;
+          cursor: pointer;
+    }
+    @media only screen and (max-width: 497px) {
+      .button {
+        padding: 5px 10px 5px 10px;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      .copy {
+        padding-left: 6px;
+      padding-right: 6px;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      .reset {
+        padding-left: 6px;
+      padding-right: 6px;
+      }
+    }
+    @media only screen and (max-width: 361px) {
+      .button {
+        padding: 5px 5px 5px 5px;
+        font-size: 12px;
+      }
+    }
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Title Image */
+
+.intro{
+  background-image: linear-gradient(to right,thistle,lavender,white,lavender,white);
+  padding-bottom: 220px;
+  text-align: left;
+  margin-top: -50px;
+}
+
+.title-image1 {
+  width: 100%;
+  position: absolute;
+  right: 13%;
+  top: 5px;
+}
+
+.title-image {
+  width: 100%;
+  right: 50%;
+  top: 4px;
+}
+
+.small-heading{
+  color: #800080;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  text-decoration: underline;
+}
+
+@keyframes example {
+  0% {color: #800080;transform: scale(1.09);}
+  50% {color: red;transform: scale(1.02);}
+  100% {color: #800080;transform: scale(1);}
+}
+.button1{
+  width:250px;
+}
+
+/** forms **/
+.title{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color:black;
+}
+
+.generate{
+  background-color: lavender;
+}
+
+.generate_form{
+  background-color: #daedf4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  outline: 1px solid black;
+  outline-offset: -10px;
+}
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+ 
+}
+
+@media (max-width: 920px){
+   .imagee{
+      width: 50%;
+    margin-top: 5vmin;
+  }
+}
+
+.ml9 .ml10{
+  position: relative;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+.ml9 .text-wrapper .ml10{
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter, .ml10 .let {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
